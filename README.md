@@ -7,10 +7,10 @@ DIY Clone of Arduboy game console, with ... a little addition :)
 Tests and assembly are ongoing!
 
 This was done as a way to get hands on experience with some tools, such as KiCad (schematics, layout), 0805 SMD soldering,
-8bit PIC microcontroller, which is added in a *dual core* approach to keep the Arduboy clone in its basic format but with
+8bit PIC microcontroller, which is added in a **dual core** approach to keep the Arduboy clone in its basic format but with
 added functions.
 
-The main purpose is also to build myself a DIY Arduboy FX clone in an arcarde bartop format,
+The main purpose is also to build myself a DIY Arduboy FX clone in an **arcarde bartop format**,
  with full scale arcade stick and buttons.
  
 This was also an occasion to add some functionnalities and changes to the original - see below - mostly 
@@ -24,12 +24,12 @@ Stay tuned
 
 - 2.42 inch SPI oled screen & swappable screen (other footprint for 1.3 inch SPI)
 - swappable flash (a.k.a FX version)
-- AkuMon thanks to *dual core* to monitor battery state of charge: https://github.com/NicoRouger/AkuMon & https://github.com/NicoRouger/AkuMon_Software
+- AkuMon thanks to *dual core* to monitor battery state of charge (SOC): https://github.com/NicoRouger/AkuMon & https://github.com/NicoRouger/AkuMon_Software
 - Initially developed for a bartop & arcade stick DIY clone of Arduboy
-- NiMH battery & more - can be selected with two config bits (4 states: Alka, NiMH, LiPoly, or 9V batt)
+- NiMH battery & more - can be selected with two config bits (4 states: Alka, NiMH, LiPoly, or 9V batt, see related repo for more info.)
 - alternative format with same pcb: can be use as a portable device!
 - volume pot (ish)
-- 5v & 3.3 on board
+- regulated 5 V & 3.3 V on board
 - possibility of other i/o from pic16f and uart
 - can be supplied from 4xAAA, 4xAA (NiMH or Alkaline OK), also from LiPoly and 9V battery, thanks to added 40V LDO!
 - can be supplied from USB (micro usb) from Itsy Bitsy
@@ -41,7 +41,7 @@ other functionnalities from pic16f: memory?bat logging? play time?additionnal mi
 ## Supply voltage?
 4xAA or 4xAAA for availability, close to 5V and considering primary use of ArduStick as a portable bartop Arduboy FX Clone.
 
-Warning: Fresh 4x batteries can be above 5V!  Two options: supply via the itsy bitsy LDO (ref: 150mA LDO 5 V
+Warning: Fresh 4x batteries can be above 5 to 6 V (and also as low as 4 V)!  Two options: supply via the itsy bitsy LDO (ref: 150mA LDO 5 V
 MIC5225-5.0, 
 input voltage 2.3V to 16V, 
 10 µF in/out cap, 
@@ -145,7 +145,7 @@ PCB_Test1.mp4
 *Video: Demo - Preliminary test with PCB v1_1*
 <video src="https://github.com/user-attachments/assets/c62bdb68-0ea3-4772-b8cc-c49146979524" width="320" height="180" controls></video>
 
-[Video](./Videos/PPCB_Test1.mp4)
+[Video](./Videos/PCB_Test1.mp4)
 
 *Video: Demo - Preliminary test with PCB v1_1: in case of low battery!*
 <video src="https://github.com/user-attachments/assets/d2a6dbc8-d92a-4d3e-8e8a-430d5bdfd4f8" width="180" height="320" controls></video>
