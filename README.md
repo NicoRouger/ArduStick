@@ -88,7 +88,7 @@ Assemble Screen (see issues/problems)
 Make an image
 Burn using python GUI
 
-Kudos to @MrBlinky for such amazing tools!
+Kudos to [@MrBlinky](https://github.com/MrBlinky)for such amazing tools!
 https://github.com/MrBlinky/Arduboy-homemade-package
 
 # Step 4: Check (and fun!)
@@ -132,12 +132,14 @@ Video:
 PCB_Test1.mp4
 
 *Video: Demo - Preliminary test with PCB v1_1*
-<video src="https://github.com/user-attachments/assets/c62bdb68-0ea3-4772-b8cc-c49146979524" width="360" height="480" controls></video>
+<video src="https://github.com/user-attachments/assets/c62bdb68-0ea3-4772-b8cc-c49146979524" width="320" height="180" controls></video>
+
+[Video](./Videos/PCB-Test1.mp4)
 
 *Video: Demo - Preliminary test with PCB v1_1: in case of low battery!*
-<video src="https://github.com/user-attachments/assets/d2a6dbc8-d92a-4d3e-8e8a-430d5bdfd4f8" width="360" height="480" controls></video>
+<video src="https://github.com/user-attachments/assets/d2a6dbc8-d92a-4d3e-8e8a-430d5bdfd4f8" width="180" height="320" controls></video>
 
-
+[Video](./Videos/PCB_Test1_LowBATT.mp4)
 
 # Step 7: Bartop machining
 
