@@ -9,7 +9,10 @@ Tests and assembly are ongoing!
 This was done as a way to get hands on experience with some tools, such as KiCad (schematics, layout), 0805 SMD soldering,
 8bit PIC microcontroller.
 
-The main purpose is also to build myself a DIY Arduboy FX clone in an arcarde bartop format, with full scale arcade stick and buttons.
+The main purpose is also to build myself a DIY Arduboy FX clone in an arcarde bartop format,
+ with full scale arcade stick and buttons.
+ 
+This was also an occasion to add some functionnalities and changes to the original - see below. 
 
 <img src="./Images/ArduStick-Project.jpg" width="300">
 
@@ -19,31 +22,36 @@ Stay tuned
 
 - 2.42 inch SPI oled screen & swappable screen (other footprint for 1.3 inch SPI)
 - swappable flash (a.k.a FX version)
-- AkuMon & dual core to monitor battery charge: https://github.com/NicoRouger/AkuMon & https://github.com/NicoRouger/AkuMon_Software
+- AkuMon thanks to *dual core* to monitor battery state of charge: https://github.com/NicoRouger/AkuMon & https://github.com/NicoRouger/AkuMon_Software
 - Initially developed for a bartop & arcade stick DIY clone of Arduboy
-- NiMH battery & more
+- NiMH battery & more - can be selected with two config bits (4 states: Alka, NiMH, LiPoly, or 9V batt)
 - alternative format with same pcb: can be use as a portable device!
 - volume pot (ish)
 - 5v & 3.3 on board
 - possibility of other i/o from pic16f and uart
+- can be supplied from 4xAAA, 4xAA (NiMH or Alkaline OK), also from LiPoly and 9V battery, thanks to added 40V LDO!
+- can be supplied from USB (micro usb) from Itsy Bitsy
 
 # Other functionnalities (to be developped?)
 other functionnalities from pic16f: memory?bat logging? play time?additionnal miroir controller (???)
 
 # Design Consideration
 ## Supply voltage?
-4xAA for availability, close to 5V and considering primary use of ArduStick as a portable bartop Arduboy FX Clone.
+4xAA or 4xAAA for availability, close to 5V and considering primary use of ArduStick as a portable bartop Arduboy FX Clone.
 
-- Input in 5V ? Batt ? external LDO? 
+- Input in 5V ? Batt ? external LDO and USB! 
 
-- Monitor remaining capacity ? >>> I developed AkuMon, 
+- Monitor remaining capacity ? >>> I developed AkuMon, to monitor state of charge
 
-- Flexible AA types: NiMH, Alkaline, or maybe 9V (but higher losses with LDO) or LiPoly
+- Flexible AA and AAA types: NiMH, Alkaline, or maybe 9V (but higher losses with LDO - resistor bridge must be changed) 
+or LiPoly
 
 
 ## 32u4 version? 
 
 Itsy bitsy not that common
+
+5V 16 MHz version.
 
 ## Connection?
 (original vs new?)
@@ -61,11 +69,14 @@ Buy an official Arduboy! https://www.arduboy.com/shop
 It is fun and well made!
 
 
+
 # Step 1: Bootloader burning
 Assemble Itsy Bitsy: soldering (lead free!)
 Arduino R4 wifi as ICSP
 breadboard for heartbeat, ...
 
+Kudos to @MrBlinky for such amazing tools!
+https://github.com/MrBlinky/Arduboy-homemade-package
 
 # Step 2: Solderless breadboarding
 Assemble Flash
@@ -75,6 +86,8 @@ Assemble Screen (see issues/problems)
 Make an image
 Burn using python GUI
 
+Kudos to @MrBlinky for such amazing tools!
+https://github.com/MrBlinky/Arduboy-homemade-package
 
 # Step 4: Check (and fun!)
 Play!
@@ -143,6 +156,12 @@ Current draw and regulator!
 
 utterly crappy solderless breadboards
 
+1. program bootloader
+2. 3.3v vs 5v compliant?
+3. black screen aka rst pin
+4. low current power bank
+5. supply?
+
 White LED: RABG
 
 # Bonus: Use as a portable device with 1.3 OLED SPI SSD1306
@@ -166,7 +185,7 @@ See: https://community.arduboy.com
 
 Nicolas Rouger, FR
 
-a.k.a Niiico
+a.k.a Niiico, @NicoRouger
 
 Weekend and evening's project :)
 
