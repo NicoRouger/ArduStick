@@ -117,7 +117,7 @@ Video:
 PCB_Test1.mp4
 
 *Video: Demo - Python Supervisor v1.2*
-<video src=".\Videos\PCB_Test1.mp4" width="360" height="480" controls></video>
+<video src="https://github.com/NicoRouger/ArduStick/blob/0ed8bd9fb8c8747ae225042cf2bd80a993b30226/Videos/PCB_Test1.mp4" width="360" height="480" controls></video>
 
 
 # Step 7: Bartop machining
