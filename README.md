@@ -133,6 +133,12 @@ PDF available:
 # Step 6: Assembly (PCB and parts)
 List of parts to be populated
 Soldering: PCB
+
+*PCB from backside, soldered by myself with some ugly flux residue!*
+
+<img src="./Images/PCB_Solder-Backside" width="300">
+
+
 Soldering: Panel (buttons and supply)
 Test sequence
 
