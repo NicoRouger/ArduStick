@@ -41,6 +41,17 @@ other functionnalities from pic16f: memory?bat logging? play time?additionnal mi
 ## Supply voltage?
 4xAA or 4xAAA for availability, close to 5V and considering primary use of ArduStick as a portable bartop Arduboy FX Clone.
 
+Warning: Fresh 4x batteries can be above 5V!  Two options: supply via the itsy bitsy LDO (ref: 150mA LDO 5 V
+MIC5225-5.0, 
+input voltage 2.3V to 16V, 
+10 µF in/out cap, 
+BAT pin
+)  or via an external LDO. The second approach was chosen, because 2.42 SPI OLED screens were found to draw a lot of current,
+possibility due to their poor boost converter.
+An extra LDO was selected, based on availability, limited time for choosing, price (TPS7A6550QKVURQ1,
+300mA LDO 5 V, input voltage <4 V to 40V). 
+
+
 - Input in 5V ? Batt ? external LDO and USB! 
 
 - Monitor remaining capacity ? >>> I developed AkuMon, to monitor state of charge
@@ -134,7 +145,7 @@ PCB_Test1.mp4
 *Video: Demo - Preliminary test with PCB v1_1*
 <video src="https://github.com/user-attachments/assets/c62bdb68-0ea3-4772-b8cc-c49146979524" width="320" height="180" controls></video>
 
-[Video](./Videos/PCB-Test1.mp4)
+[Video](./Videos/PPCB_Test1.mp4)
 
 *Video: Demo - Preliminary test with PCB v1_1: in case of low battery!*
 <video src="https://github.com/user-attachments/assets/d2a6dbc8-d92a-4d3e-8e8a-430d5bdfd4f8" width="180" height="320" controls></video>
