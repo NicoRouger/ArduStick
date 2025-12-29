@@ -136,7 +136,7 @@ Soldering: PCB
 
 *PCB from backside, soldered by myself with some ugly flux residue!*
 
-<img src="./Images/PCB_Solder-Backside" width="300">
+<img src="./Images/PCB_Solder-Backside.jpg" width="300">
 
 
 Soldering: Panel (buttons and supply)
