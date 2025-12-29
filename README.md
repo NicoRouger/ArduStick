@@ -132,11 +132,10 @@ Video:
 PCB_Test1.mp4
 
 *Video: Demo - Preliminary test with PCB v1_1*
-<video src="https://github.com/NicoRouger/ArduStick/blob/424d8a70e86bc0793254627beb539677b996d173/Videos/PCB_Test1.mp4" width="360" height="480" controls></video>
-
+<video src="https://github.com/user-attachments/assets/c62bdb68-0ea3-4772-b8cc-c49146979524" width="360" height="480" controls></video>
 
 *Video: Demo - Preliminary test with PCB v1_1: in case of low battery!*
-<video src="https://github.com/NicoRouger/ArduStick/blob/424d8a70e86bc0793254627beb539677b996d173/Videos/PCB_Test1_LowBATT.mp4" width="360" height="480" controls></video>
+<video src="https://github.com/user-attachments/assets/d2a6dbc8-d92a-4d3e-8e8a-430d5bdfd4f8" width="360" height="480" controls></video>
 
 
 
