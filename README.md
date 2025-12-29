@@ -175,3 +175,11 @@ Weekend and evening's project :)
 
 All files, pictures, video, schematics are:
 CC BY SA 4.0 (Creative Commons Attribution, Share A Like, International 4.0)
+
+# Version
+
+## Version 1_1
+- Initial release with preliminary files
+- Schematics
+- Some pictures of prototypes, including PCB
+- December 2025
