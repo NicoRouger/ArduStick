@@ -89,7 +89,7 @@ Version 1_1
 <img src="./Images/Schematics-v1_1.jpg" width="300">
 
 PDF available:
-[Schematics](.\Images\ArduStick_v1_1.pdf)
+[Schematics](./Images/ArduStick_v1_1.pdf)
 
 ## Layout (2 layer PCB)
 
