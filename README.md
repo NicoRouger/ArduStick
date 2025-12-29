@@ -7,12 +7,14 @@ DIY Clone of Arduboy game console, with ... a little addition :)
 Tests and assembly are ongoing!
 
 This was done as a way to get hands on experience with some tools, such as KiCad (schematics, layout), 0805 SMD soldering,
-8bit PIC microcontroller.
+8bit PIC microcontroller, which is added in a *dual core* approach to keep the Arduboy clone in its basic format but with
+added functions.
 
 The main purpose is also to build myself a DIY Arduboy FX clone in an arcarde bartop format,
  with full scale arcade stick and buttons.
  
-This was also an occasion to add some functionnalities and changes to the original - see below. 
+This was also an occasion to add some functionnalities and changes to the original - see below - mostly 
+via an added 8 bit microcontroller used to monitor the state of charge. 
 
 <img src="./Images/ArduStick-Project.jpg" width="300">
 
@@ -75,7 +77,7 @@ Assemble Itsy Bitsy: soldering (lead free!)
 Arduino R4 wifi as ICSP
 breadboard for heartbeat, ...
 
-Kudos to @MrBlinky for such amazing tools!
+Kudos to [@MrBlinky](https://github.com/MrBlinky) for such amazing tools!
 https://github.com/MrBlinky/Arduboy-homemade-package
 
 # Step 2: Solderless breadboarding
@@ -130,7 +132,12 @@ Video:
 PCB_Test1.mp4
 
 *Video: Demo - Preliminary test with PCB v1_1*
-<video src="https://github.com/NicoRouger/ArduStick/blob/0ed8bd9fb8c8747ae225042cf2bd80a993b30226/Videos/PCB_Test1.mp4" width="360" height="480" controls></video>
+<video src="https://github.com/NicoRouger/ArduStick/blob/424d8a70e86bc0793254627beb539677b996d173/Videos/PCB_Test1.mp4" width="360" height="480" controls></video>
+
+
+*Video: Demo - Preliminary test with PCB v1_1: in case of low battery!*
+<video src="https://github.com/NicoRouger/ArduStick/blob/424d8a70e86bc0793254627beb539677b996d173/Videos/PCB_Test1_LowBATT.mp4" width="360" height="480" controls></video>
+
 
 
 # Step 7: Bartop machining
@@ -169,13 +176,13 @@ White LED: RABG
 Alternative use of same PCB!
 
 
-# GITHUB repos
+# GITHUB repos & required files
 
-https://github.com/NicoRouger/ArduStick
+This repo: https://github.com/NicoRouger/ArduStick
 
-https://github.com/NicoRouger/AkuMon
+The schematics and more details on AkuMon, to monitor the SOC: https://github.com/NicoRouger/AkuMon
 
-https://github.com/NicoRouger/AkuMon_Software
+and its software: https://github.com/NicoRouger/AkuMon_Software
 
 
 # List of useful resources
@@ -185,7 +192,7 @@ See: https://community.arduboy.com
 
 Nicolas Rouger, FR
 
-a.k.a Niiico, @NicoRouger
+a.k.a Niiico, [@NicoRouger](https://github.com/NicoRouger)
 
 Weekend and evening's project :)
 
