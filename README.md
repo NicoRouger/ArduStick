@@ -85,12 +85,14 @@ which one? -> Many are available. I chose one with 7 pins, SPI SSD1309, 2.42 inc
 My goal was to use the same PCB for both the Ardustick (Arcade bartop with 2.42 inch screen) and also for another use as portable homemade Arduboy FX clone (with pushbutton on PCB and 1.3 inch screen).
 
 
-# Step 0: Buy an Arduboy FX
+# Step 0: Buy an Arduboy FX - seriously!
 Big thanks to community, tool makers, game makers!
-Buy an official Arduboy! https://www.arduboy.com/shop
-It is fun and well made!
 
-The arduboy FX with USB is also coming, please consider supporting Arduboy.
+Buy an official Arduboy! https://www.arduboy.com/shop
+
+It is fun and well made! I have the FX black edition and the whole family loves it!
+
+The arduboy FX with USB-C is also coming, please consider supporting Arduboy.
 
 
 
@@ -136,13 +138,15 @@ Burn Bootloader!
 # Step 2: Solderless breadboarding
 Assemble Flash, Screen (see issues/problems), and Itsy bitsy.
 
-Only one or two pushbutton is necessary at this stage to due some testing.
+Only one or two pushbutton is necessary at this stage to do some testing.
 
 # Step 3: Flash games
 Make an image of the games: can be available at https://www.bloggingadeadhorse.com/cart/Cart.html 
 
-Burn using python GUI from [@MrBlinky](https://github.com/MrBlinky) - many thanks for such amazing tools!
+Flash the game cart using python GUI from [@MrBlinky](https://github.com/MrBlinky) - many thanks for such amazing tools!
 https://github.com/MrBlinky/Arduboy-Python-Utilities 
+
+If SSD1309, consider using the "apply SSD1309 patch"
 
 # Step 4: Check (and first fun!)
 Play!
@@ -169,7 +173,7 @@ Adjust the LED resistors depending on the LEDs and desired light power.
 
 I used sockets for the screens, Itsy Bitsy and Flash memory.
 
-Populated only one resistance from R15 and R16, depending on the screen used. For my SSD1309, I even left R15 unpopulated, because the screen has already a pull up on RST with RC.
+Populate only one resistance from R15 and R16, depending on the screen used. For my SSD1309, I even left R15 unpopulated, because the screen has already a pull up on RST with RC.
 
 ## Layout (2 layer PCB)
 
@@ -195,7 +199,7 @@ Soldering: PCB
 
 <img src="./Images/PCB_Solder-Frontside.jpg" width="300">
 
-Some tests:
+Some tests of other prototypes from the same PCB batch:
 
 <img src="./Images/PCB-Test1.jpg" width="300">
 
