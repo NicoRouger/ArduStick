@@ -22,6 +22,11 @@ The final prototype:
 
 <img src="./Images/Niiico-Ardustick.jpg" width="300">
 
+A Video demo of some games played on the ArduStick:
+
+https://youtu.be/XPOMfcU2bko?si=K0rKx57cFQICyqGc
+
+
 And the initial tests on breadboard:
 
 <img src="./Images/ArduStick-Project.jpg" width="300">
@@ -67,6 +72,9 @@ An extra LDO was selected, based on availability, limited time for choosing, pri
 
 - Flexible AA and AAA types: NiMH, Alkaline, or maybe 9V (but higher losses with LDO - resistor bridge must be changed) 
 or LiPoly
+
+- **WARNING** Although the LDO is compatible with inputs up to 40V, there a resistor divider on this input voltage for AkuMon, without any clamp. Since the resistor
+divider is typically 1/2, and goes into the input of the PIC16F1769, the max battery input voltage is **10 V** (max 5V at input).
 
 
 ## 32u4 version? 
@@ -174,6 +182,10 @@ Adjust the LED resistors depending on the LEDs and desired light power.
 I used sockets for the screens, Itsy Bitsy and Flash memory.
 
 Populate only one resistance from R15 and R16, depending on the screen used. For my SSD1309, I even left R15 unpopulated, because the screen has already a pull up on RST with RC.
+In case of 2.42" SPI screen, R15 could also be replaced by a Schottky diode, with cathode on OLED_RESET and anode on screen RST pin.
+
+Also the input for AkuMon "ADCin" can be clamped with a diode (pin #13, RB4 of the PIC16F). This way, there won't be any issued with battery input higher than 10 V and lower than 40 V.
+
 
 ## Layout (2 layer PCB)
 
